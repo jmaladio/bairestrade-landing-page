@@ -1,0 +1,89 @@
+// AMBER: light 500 - medium 700 - dark 900
+// https://www.materialpalette.com/colors
+
+$color-primary: #ffc107;
+$color-primary-light: #ffe082;
+$color-primary-dark: #ff6f00;
+
+$color-grey-dark: #444444;
+$color-grey-light: #eee;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+.header {
+  background-color: $color-grey-light;
+  padding: 3rem 8rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    & .logo {
+      font-size: 4rem;
+      font-weight: 300;
+    }
+
+
+    & .main-nav {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      & ul {
+        display: flex;
+        & li {
+          list-style: none;
+          margin: 0 2rem;
+    
+          & a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 500;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    & .btn-chat {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+  }
+}
+
+
+
+.section-about {
+  height: 50rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary);
+}
+
