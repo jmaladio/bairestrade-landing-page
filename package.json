@@ -1,0 +1,14 @@
+{
+  "name": "bairestrade",
+  "version": "1.0.0",
+  "description": "Landing page for bairestrade",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julián Aladio",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
