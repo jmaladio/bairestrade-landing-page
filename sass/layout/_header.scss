@@ -1,0 +1,36 @@
+
+.header {
+  background-color: transparent;
+  padding: 3rem 8rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+    & .main-nav {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      & ul {
+        display: flex;
+        justify-content: space-between;
+        width: 54rem;
+        padding: 0 1rem;
+
+        & li {
+          list-style: none;
+    
+          
+        }
+      }
+    }
+
+    
+
+  }
+}

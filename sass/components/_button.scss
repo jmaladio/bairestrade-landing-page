@@ -40,7 +40,11 @@
     box-shadow: 0 .5rem 1rem rgba(#000, .2);
   }
 
-  
+  &--read-more {
+    background-color: $color-primary-dark;
+    color: #fff;
+    align-self: flex-start;
+  }
 
   &--main-chat {
     color: inherit;

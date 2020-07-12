@@ -12,6 +12,7 @@
     border-radius: 2rem;
     padding: 3rem 3rem;
     min-width: 25rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
 
     &--1 {
       left: 20rem;
@@ -21,13 +22,13 @@
 
     &--2 {
       left: 23rem;
-      top: 27rem;
+      top: 30rem;
       width: 20%;
     }
 
     &--3 {
       right: 20rem;
-      top: 32rem;
+      top: 35rem;
       width: 20%;
     }
 
@@ -40,15 +41,16 @@
     &--5 {
       left: 50%;
       transform: translateX(-50%);
-      top: 5rem;
+      top: 8rem;
       width: 20%;
     }
 
     &--6 {
       left: 51%;
       transform: translateX(-50%);
-      top: 33rem;
+      top: 40rem;
       width: 15%;
+      min-width: 20rem;
       padding: 5rem 0;
     }
   }

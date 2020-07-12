@@ -1,0 +1,40 @@
+.about {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 1 45%;
+  background-color: transparent;
+  align-items: center;
+
+  &__users {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__panels {
+    background-color: #fff;
+    color: $color-grey-dark;
+    padding: 3rem 1rem;
+    border-radius: 50rem;
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+
+    &-icons {
+      background-color: $color-primary-light;
+      border-radius: 50rem;
+      height: 7rem;
+      width: 7rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      
+    }
+
+    & p {
+      margin: 0 auto;
+    }
+  }
+
+}
