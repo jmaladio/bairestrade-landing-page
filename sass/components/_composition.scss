@@ -1,0 +1,55 @@
+.composition {
+  position: relative;
+  display: block;
+  padding: 3rem 8rem;
+  width: 100%;
+
+  &__photo {
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem 3rem;
+    min-width: 25rem;
+
+    &--1 {
+      left: 20rem;
+      top: -3rem;
+      width: 20%;
+    }
+
+    &--2 {
+      left: 23rem;
+      top: 27rem;
+      width: 20%;
+    }
+
+    &--3 {
+      right: 20rem;
+      top: 32rem;
+      width: 20%;
+    }
+
+    &--4 {
+      right: 15rem;
+      top: 2rem;
+      width: 20%;
+    }
+
+    &--5 {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 5rem;
+      width: 20%;
+    }
+
+    &--6 {
+      left: 51%;
+      transform: translateX(-50%);
+      top: 33rem;
+      width: 15%;
+      padding: 5rem 0;
+    }
+  }
+}

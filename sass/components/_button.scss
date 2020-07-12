@@ -1,0 +1,72 @@
+.header-links {
+
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 2rem;
+    white-space: nowrap;
+    padding: 1rem 1rem;
+  }
+
+}
+
+.btn {
+  &:link,
+  &:visited {
+    padding: 1rem 3rem;
+    border-radius: 10rem;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    box-shadow: 0 1rem 2rem rgba(#000, .1);
+    position: relative;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(#000, .2);
+
+    &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(#000, .2);
+  }
+
+  
+
+  &--main-chat {
+    color: inherit;
+    border: 2px solid $color-primary-dark;
+    background-color: #fff;
+  }
+
+  &--action {
+    background-color: $color-secondary;
+    color: #fff;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+}
