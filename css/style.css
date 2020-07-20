@@ -46,7 +46,8 @@ body {
 .heading-quaternary {
   font-size: 3rem;
   font-weight: 700;
-  line-height: 1.3; }
+  line-height: 1.3;
+  letter-spacing: 0; }
   .heading-quaternary--white {
     color: #fff; }
 
@@ -56,11 +57,17 @@ body {
     font-size: 2.2rem;
     font-weight: 500; }
 
+.u-margin-top--bigger {
+  margin-top: 8rem; }
+
 .u-margin-top--big {
   margin-top: 5rem; }
 
 .u-margin-top--medium {
   margin-top: 3.5rem; }
+
+.u-margin-top--small {
+  margin-top: 2rem; }
 
 .about {
   display: flex;
@@ -81,12 +88,19 @@ body {
     position: relative;
     width: 100%;
     max-width: 50rem; }
-    .about__panels-icons {
+    .about__panels--bg {
       background-color: #ffe082;
       border-radius: 50rem;
       height: 7rem;
       width: 7rem;
       position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .about__panels--icons {
+      font-size: 3rem;
+      z-index: 9;
+      position: absolute;
+      left: 3rem;
       top: 50%;
       transform: translateY(-50%); }
     .about__panels p {
@@ -148,6 +162,19 @@ body {
   left: 0;
   z-index: -1;
   transition: all .4s; }
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 0 1 24%;
+  padding: 2rem 2rem;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem; }
+  .card__icon {
+    color: #ffc107;
+    font-size: 7rem; }
+  .card .heading-quaternary {
+    font-size: 2.5rem; }
 
 .composition {
   position: relative;
@@ -223,10 +250,21 @@ body {
   margin-top: 10rem; }
 
 .section-about {
-  height: 120rem;
+  height: 130rem;
   background-image: linear-gradient(to right bottom, #9575cd, #512da8);
   border-top-left-radius: 10rem;
   border-top-right-radius: 10rem;
   display: flex;
   justify-content: space-between;
   padding: 55rem 15rem 10rem 15rem; }
+
+.section-services {
+  padding: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .section-services .card-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }

@@ -11,6 +11,8 @@
     width: 100%;
   }
 
+
+
   &__panels {
     background-color: #fff;
     color: $color-grey-dark;
@@ -21,7 +23,7 @@
     width: 100%;
     max-width: 50rem;
 
-    &-icons {
+    &--bg {
       background-color: $color-primary-light;
       border-radius: 50rem;
       height: 7rem;
@@ -32,6 +34,16 @@
       
     }
 
+    &--icons {
+      font-size: 3rem;
+      z-index: 9;
+      position: absolute;
+      left: 3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      // color: $color-secondary-dark;
+    }
+  
     & p {
       margin: 0 auto;
     }

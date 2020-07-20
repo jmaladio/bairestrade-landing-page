@@ -10,10 +10,8 @@
   
 }
 
-
-
 .section-about {
-  height: 120rem;
+  height: 130rem;
   background-image: linear-gradient(
     to right bottom,
     $color-secondary-light,
@@ -23,4 +21,19 @@
   display: flex;
   justify-content: space-between;
   padding: 55rem 15rem 10rem 15rem;
+}
+
+.section-services {
+  padding: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
 }
