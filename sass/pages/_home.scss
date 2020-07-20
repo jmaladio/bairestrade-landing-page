@@ -28,12 +28,24 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  
+  .services {
+    padding-top: 10rem;
 
-  .card-container {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    &__card-container {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  
+    &__box-container {
+      width: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
   }
+
 
 }
