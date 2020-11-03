@@ -1,14 +1,15 @@
 {
-  "name": "bairestrade",
-  "version": "1.0.0",
-  "description": "Landing page for bairestrade",
-  "main": "index.js",
+  "name": "bairestrade-landing-page",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "author": "Julián Aladio",
-  "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^4.14.1"
+  "dependencies": {
+    "next": "10.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
