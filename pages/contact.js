@@ -1,9 +1,9 @@
 import { Layout } from "../src/components";
 
-export default function Home() {
+export default function Contact() {
   return (
     <div>
-      <Layout>Home Content</Layout>
+      <Layout>Contact Content</Layout>
     </div>
   );
 }

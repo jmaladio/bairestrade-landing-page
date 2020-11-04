@@ -1,9 +1,9 @@
 import { Layout } from "../src/components";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
-      <Layout>Home Content</Layout>
+      <Layout>About Content</Layout>
     </div>
   );
 }
